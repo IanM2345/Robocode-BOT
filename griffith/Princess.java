@@ -42,7 +42,7 @@ public class Princess extends Robot
      */
     public void onHitByBullet(HitByBulletEvent e) {
         double bearing = e.getBearing();
-        turnRight(90 - bearing); // Turn to face the robot that hit
+        turnRight(180 - bearing); // Turn to face the robot that hit
         movingForward = false; // Change direction to move backward
         while (true) {
             scan(); // Scan for the robot that hit
